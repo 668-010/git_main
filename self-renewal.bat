@@ -63,4 +63,4 @@ goto no_update
 	cd "C:\Program Files\GIT Main Updater\"
 	start cmd /k "C:\Program Files\GIT Main Updater\remself.bat"
 	echo starie
-	pause
+	exit

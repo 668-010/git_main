@@ -5,3 +5,4 @@ call "C:\Program Files\GIT Main Updater\git_zabbix.bat"
 ::call "C:\Program Files\GIT Main Updater\rezerv.bat"
 ::call "C:\Program Files\GIT Main Updater\rezerv2.bat"
 echo starie
+Exit
