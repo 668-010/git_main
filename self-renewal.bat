@@ -41,12 +41,13 @@ goto no_update
 :: Пишем в лог что обновились заббикс модули
 	cd "C:\Program Files\GIT Main Updater\log"
 	echo ============================================ >> "C:\Program Files\GIT Main Updater\log\log.txt"
-	echo "Zabbix modules updated a new version  (%date%   %time%)" >> "C:\Program Files\GIT Main Updater\log\log.txt"
+	echo "Main Git Scripts Updated  (%date%   %time%)" >> "C:\Program Files\GIT Main Updater\log\log.txt"
 	echo ============================================ >> "C:\Program Files\GIT Main Updater\log\log.txt"
 
 :: Удаляем папку ранее извлеченного архива
 	rmdir /s /q "C:\Program Files\GIT Main Updater\tmp\git_main-master"
-	
+
+::	Переход на удаление батника и продолжение цикла
 	goto run_remself
 
 :: Иначе (если файлы версий совпадают то пишем в лог что нет обновления)		
@@ -54,13 +55,13 @@ goto no_update
 	echo no mod updates
 	cd "C:\Program Files\GIT Main Updater\log"
 	echo ============================================ >> "C:\Program Files\GIT Main Updater\log\log.txt"
-	echo "Zabbix modules not updated (%date%    %time%)" >> "C:\Program Files\GIT Main Updater\log\log.txt"
+	echo "Not found new updates for Main Git Scripts (%date%    %time%)" >> "C:\Program Files\GIT Main Updater\log\log.txt"
 	echo ============================================ >> "C:\Program Files\GIT Main Updater\log\log.txt"
-
+	exit
 	
 :run_remself
-	:: Переход в папку с пакетами GIT и запускаем Shell Updater с ожиданием его окончания, для проверки обновлений компонентов заббикс модулей
+
+:: Переход в папку с пакетами GIT и запускаем очередной батник без ожидания его окончания, для удаления временного батника и продолжения цикла.
 	cd "C:\Program Files\GIT Main Updater\"
 	start cmd /k "C:\Program Files\GIT Main Updater\remself.bat"
-	echo starie
 	exit
