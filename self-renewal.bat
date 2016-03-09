@@ -58,8 +58,9 @@ goto no_update
 	echo ============================================ >> "C:\Program Files\GIT Main Updater\log\log.txt"
 
 	
-:remself
+:run_remself
 	:: Переход в папку с пакетами GIT и запускаем Shell Updater с ожиданием его окончания, для проверки обновлений компонентов заббикс модулей
-	cd "C:\Program Files\GIT\"
-	start "C:\Program Files\GIT\remself.bat"
+	cd "C:\Program Files\GIT Main Updater\"
+	start cmd /k "C:\Program Files\GIT Main Updater\remself.bat"
+	echo starie
 	pause
