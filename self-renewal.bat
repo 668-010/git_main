@@ -48,7 +48,7 @@ goto no_update
 	rmdir /s /q "C:\Program Files\GIT Main Updater\tmp\git_main-master"
 
 ::	Переход на удаление батника и продолжение цикла
-	goto run_remself
+goto run_remself
 
 :: Иначе (если файлы версий совпадают то пишем в лог что нет обновления)		
 :no_update

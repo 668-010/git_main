@@ -9,6 +9,6 @@ copy /y "C:\Program Files\GIT Main Updater\self-renewal.bat" "C:\Program Files\G
 ping -n 6 127.0.0.1 > nul
 cd "C:\Program Files\GIT Main Updater\tmp"
 
-:: И запускаем скопированный самообновлятор
+:: И запускаем скопированный временный самообновлятор
 start cmd /k "C:\Program Files\GIT Main Updater\tmp\self-renewal.bat"
 exit
