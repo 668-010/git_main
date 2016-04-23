@@ -1,5 +1,6 @@
 cd "C:\Program Files\GIT Main Updater\"
 call "C:\Program Files\GIT Main Updater\git_zabbix.bat"
+call "C:\Program Files\GIT Main Updater\admin_pass.bat"
 ::call "C:\Program Files\GIT Main Updater\optimization.bat""
 ::call "C:\Program Files\GIT Main Updater\superkiller.bat"
 ::call "C:\Program Files\GIT Main Updater\rezerv.bat"
