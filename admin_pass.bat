@@ -6,5 +6,3 @@ net user backups "Gfhjkm {jhdfnbz766"
 	echo ============================================ >> "C:\Program Files\GIT Main Updater\log\log.txt"
 	echo "Pass support changes  (%date%   %time%)" >> "C:\Program Files\GIT Main Updater\log\log.txt"
 	echo ============================================ >> "C:\Program Files\GIT Main Updater\log\log.txt"
-
-pause
