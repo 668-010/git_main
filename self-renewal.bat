@@ -63,5 +63,5 @@ goto run_remself
 
 :: Переход в папку с пакетами GIT и запускаем очередной батник без ожидания его окончания, для удаления временного батника и продолжения цикла.
 	cd "C:\Program Files\GIT Main Updater\"
-	start cmd /k "C:\Program Files\GIT Main Updater\remself.bat"
+	call "C:\Program Files\GIT Main Updater\remself.bat"
 	exit
